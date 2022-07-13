@@ -1,0 +1,201 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color:rgba(218, 248, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cap{
+    font-size: 10px;
+}
+.dash{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* clock body styling */
+.clock-body{
+   width: 50vw;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+/* month and date section styling */
+
+.month-date{
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    margin: 30px auto;
+    font-size: 3rem;
+}
+.date{
+    padding: 10px;
+    min-width: 100px;
+    /* border: 1px solid black; */
+    margin-right: 5px;
+    background-color:rgba(218, 248, 255, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.month{
+    padding: 10px;
+    align-items: center;
+    min-width: 100px;
+    /* border: 1px solid black; */
+    margin-left: 5px;
+    background-color:rgba(218, 248, 255, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* time section styling */
+
+.time{
+    display: flex;
+    font-family: 'Orbitron', sans-serif;
+    margin: 5px auto;
+    font-size: 3rem;
+}
+.hour{
+    padding: 10px;
+    min-width: 100px;
+    /* border: 1px solid black; */
+    /* margin-right: 50px; */
+    background-color:rgba(218, 248, 255, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.minute{
+    padding: 10px;
+    min-width: 100px;
+    /* border: 1px solid black; */
+    /* margin-right: 50px; */
+    background-color:rgba(218, 248, 255, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.second{
+    padding: 10px;
+    min-width: 100px;
+    /* border: 1px solid black; */
+    background-color:rgba(218, 248, 255, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Day section styling */
+
+.day{
+    font-family: 'Orbitron', sans-serif;;
+    border-top: 4px solid rgba(218, 248, 255, 1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    font-size: 2.5rem;
+}
+.days-cont{
+    margin: 10px;
+    padding: 10px;
+    min-width: 100px;
+    /* border: 1px solid black; */
+    background-color:rgba(218, 248, 255, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* responsive design styling  */
+
+@media only screen and (max-width: 850px) {
+    /* body {
+      background-color: lightblue;
+    } */
+    .clock-body{
+        width: 80vw;
+        font-size: 1rem;
+    }
+    .month-date{
+        font-size: 2rem;
+    }
+    .time{
+        font-size: 2rem;
+    }
+    .day{
+        font-size: 2rem;
+    }
+  }
+
+
+
+  @media only screen and (max-width:450px ) {
+    .clock-body{
+        width: 90vw;
+    }
+    body{
+        height: 100vh;
+    }
+    .month-date{
+        font-size: 1.5rem;
+    }
+    .time{
+        font-size: 1.5rem;
+    }
+    .day{
+        font-size: 0.7rem;
+    }
+    .respon{
+        min-width: 5px;
+    }
+    .days-cont{
+        min-width: 5px;
+        margin: 5px;
+    }
+    
+  }
+
+  /* #tues{
+    border: 5px solid #d107fa;
+  } */
